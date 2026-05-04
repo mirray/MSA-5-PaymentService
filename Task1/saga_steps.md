@@ -1,6 +1,6 @@
 | Transaction      | Description                                | Type              | Compensation     |
 |------------------|--------------------------------------------|-------------------|------------------|
-| Request_Payment  | Requests payment for order                 | Compensatable (T) | Notify_Unsuccess |
+| Request_Payment  | Initial payment validation                 | Compensatable (T) | Notify_Unsuccess |
 | Hold_Payment     | Hold funds from customer to seller         | Compensatable (T) | Release_Payment  |
 | Analyze_Payment  | Send payment request to anti fraud service | Retryable (T) [I] |                  |
 | Process_Payment  | Complete payment from customer to seller   | Pivot (T)         |                  |
